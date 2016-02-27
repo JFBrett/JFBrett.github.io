@@ -1,276 +1,348 @@
 <!DOCTYPE html>
-<html>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Merchant Portal - Login</title>
-<link href="GoSwiff/img/favicon.ico" rel="shortcut icon" type="image/x-icon">
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
 
-<link href="common/css/css.css" rel="stylesheet">
-<link href="common/css/carousel.css" rel="stylesheet">    
-<link href="GoSwiff/css/GoSwiff_merchant.css" rel="stylesheet">
+    <title>
+      
+        Jeremy Brett | WORK
+      
+    </title>
 
-<script src="js/jquery-1.10.2.js"></script>
-<script src="js/jquery-1.9.1.js"></script>
-<script src="js/jquery-ui.js"></script>
-<script src="js/modernizr-2.5.3.js"></script>
-<script src="js/jquery.livequery.js"></script>
-<script src="js/bootstrap.js"></script>
-<script src="js/bootstrapSwitch.js"></script>
-<script src="js/swiff_reseller_js.js"></script>
-<script src="js/plugins/metisMenu/metisMenu.min.js"></script>
-<script src="js/bootstrap-tabdrop.js"></script>
-<script src="js/plugins/morris/raphael.min.js"></script>
-<script src="js/plugins/morris/morris.min.js"></script>
-<script src="js/sb-admin-2.js"></script>
-    <!--[if lt IE 9]>
-        <script type="text/javascript" src="/goSwiff/11.0.4.0/Admin/Scripts/respond.min.js"> </script>
-        <script type="text/javascript" src="/goSwiff/11.0.4.0/Admin/Scripts/selectivizr-min.js"> </script>
-        <![endif]-->
-    </head>
+    
+      <link href="css/css" rel="stylesheet" type="text/css">
+      <link href="css/toolkit.css" rel="stylesheet">
+      <link href="css/application.css" rel="stylesheet">
+      <link href='https://fonts.googleapis.com/css?family=Istok+Web:400,700' rel='stylesheet' type='text/css'>
+    
+  </head>
+
+
 <body>
-    <div id="wrap">
-    <div class="navbar-wrapper">
-      <div class="container">
-        <nav class="navbar navbar-static-top">
-            <div class="headerLogo">
-                <h1 class="logo"><a href="#">
-                    <img src="GoSwiff/img/logo_signin.png"></a></h1>
-            </div>
-            <ul class="nav navbar-nav portal-home">
-            <li class="portal-name">
-                <h3></h3>
-            </li>
-            <a class="btn btn-success btn-lg btn-register" href="Merchant%20Portal%20-%20Sign%20up.html">Register</a>
-            <li class="btn-apple"></li>
-            <li class="btn-google"></li>
-            </ul>
-          </nav>
-        </div>
-    <!--Login box-->
-<div class="container container-login col-md-offset-2">
-    <div class="row">
-        <div class="col-md-6">
-            <div class="panel panel-default login-panel">
-                <div class="panel-heading">
-                    <h3 class="panel-title">Please sign in</h3>
-                </div>
-                <div class="panel-body">
-                    <div class="form-signin">
-                        <div class="form-group">
-                            <input autofocus="autofocus" class="form-control" id="displayedUserName" maxlength="50" name="displayedUserName" placeholder="Username" type="text" value="">    
-                        </div>
-                        <div class="input-group form-group padding-bottom-sm">
-                            <input class="form-control" id="displayedPassword" maxlength="50" name="displayedPassword" placeholder="Password" type="password" value=""><span class="input-group-btn">
-        <a class="btn btn-default" type="button" ref="https://mpos2.corp.sccpgroup.com/goSwiff/11.0.6.0_Upgrade/Merchant/Login/ResetPasswordRequest">Forgot?</a>
-      </span>
-                        </div>
-                        <input class="btn btn-lg btn-primary btn-block" type="button" value="Sign in">
-                        <div class="login-footer">
-                            <label>
-                                Not registered with GoSwiff? <a class="forget" href="Merchant%20Portal%20-%20Sign%20up.html">Sign up here</a>
-                            </label>
-                        </div>
-                    </div>
 
-<form action="https://mpos2.corp.sccpgroup.com/goSwiff/11.0.6.0_Upgrade/Merchant/Login/Login" autocomplete="off" id="hiddenForm" method="post">                        <input type="hidden" id="userName" name="username">
-                        <input type="hidden" id="password" name="password">
-<input name="__RequestVerificationToken" type="hidden" value="_-QD5jLTpY_G56w9iUPWY8s21zxophRqRBWpFDtFDt6V0Zj0e9XqttMconvcW5WoGw4MaE1NtYp9OF2jFho5GR6PSfeza8STdWUuMzm7UXY1"></form>                </div>
-            </div>
-        </div>
-    </div>
+
+<div class="aqt aqu hidden" id="sidebar">
+  <ul class="nav anr nav-stacked">
+    <li class="tq">Portfolio</li>
+    <li class="active">
+      <a href="#profile">Profile</a>
+    </li>
+    <li>
+      <a href="#work">Work</a>
+    </li>
+    <li>
+      <a href="#skills">Skills</a>
+    </li>
+    <li class="nav-divider"></li>
+    <li class="tq">Info</li>
+    <li>
+      <a href="#contact">Contact</a>
+    </li>
+  </ul>
 </div>
-    </div>
 
- <!-- Carousel
-    ================================================== -->
-   <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-  <!-- Indicators -->
-  <ol class="carousel-indicators">
-    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
-  </ol>
+<div class="aqs" id="stage">
 
-  <!-- Wrapper for slides -->
-  <div class="carousel-inner" role="listbox">
-    <div class="item active">
-      <img src="GoSwiff/img/bg.jpg" alt="...">
-      <div class="carousel-caption col-md-offset-4">
-        This is the first caption.
-          <p class="carousel-blurb">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae felis euismod, feugiat magna vitae, pretium ex.</p>
-          <a class="btn btn-primary btn-lg" href="Merchant%20Portal%20-%20Sign%20up.html">Get started</a>
-      </div>
+<div class="k al apb aqx heroic" style="background-image: url(img/header-bg.jpg);">
+
+  <nav class="dt apr px tu app-navbar and">
+  <div class="e">
+    <div class="pv">
+      <button type="button" class="pz collapsed p-x-0" data-target="#stage" data-toggle="stage" data-distance="-250">
+        <span class="ee">Toggle navigation</span>
+        <span class="qa"></span>
+        <span class="qa"></span>
+        <span class="qa"></span>
+      </button>
+      <a class="l" href="">
+          <img class="thumb" src="img/mrbones-thumb.png">
+      </a>
     </div>
-    <div class="item">
-      <img src="GoSwiff/img/bg2.jpg" alt="...">
-      <div class="carousel-caption col-md-offset-4">
-        This is the second caption.
-          <p class="carousel-blurb">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae felis euismod, feugiat magna vitae, pretium ex. Maecenas ac libero non dui congue ultricies eget non lacus. </p>
-          <p class ="carousel-tagline">And even more text</p>
-      </div>
-    </div>
-    <div class="item">
-      <img src="GoSwiff/img/bg3.jpg" alt="...">
-      <div class="carousel-caption col-md-offset-4">
-        And this is the third. 
-          <p class="carousel-blurb">Sed vitae felis euismod, feugiat magna vitae, pretium ex. </p>
-          <p class ="carousel-tagline">Only 2.1% transaction fee.</p>
+    <div class="pw collapse eu">
+      <ul class="nav navbar-nav pk">
+        <li>
+          <a href="#profile">Profile</a>
+        </li>
+        <li>
+          <a href="#work">Work</a>
+        </li>
+        <li>
+          <a href="#skills">Skills</a>
+        </li>
+        <li>
+          <a href="#contact">Contact</a>
+        </li>
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div>
+</nav>
+
+
+  <img class="y" src="img/grid.svg">
+
+  <div class="aph anm">
+    <div class="e">
+      <div class="c">
+        <div class="ha gl">
+          <h1 class="apd aqy">JEREMY BRETT.</h1>
+          <p class="ak amf am">Design. Experience. Agile. Will work for good.</p>
+          <button class="dl ot ao">Email me</button>
+        </div>
       </div>
     </div>
   </div>
-
-  <!-- Controls -->
-  <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
-    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-    <span class="sr-only">Previous</span>
-  </a>
-  <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
-    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-    <span class="sr-only">Next</span>
-  </a>
 </div>
-<!-- /.carousel -->
 
+<div class="k block-secondary z">
+  <div class="e">
+    <div class="c ap">
 
-    <!-- Marketing messaging and featurettes
-    ================================================== -->
-    <!-- Wrap the rest of the page in another container to center all the content. -->
-
-    <div class="container marketing">
-
-      <!-- Three columns of text below the carousel -->
-      <div class="row">
-        <div class="col-lg-4">
-          <img class="img-circle img-circle-feature" src="GoSwiff/img/feature1.png" alt="key feature image">
-          <h2>Heading</h2>
-          <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
-<!--          <p><a class="btn btn-default" href="#" role="button">View details »</a></p>-->
-        </div><!-- /.col-lg-4 -->
-        <div class="col-lg-4">
-          <img class="img-circle img-circle-feature" src="GoSwiff/img/feature2.png" alt="key feature image">
-          <h2>Heading</h2>
-          <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
-<!--          <p><a class="btn btn-default" href="#" role="button">View details »</a></p>-->
-        </div><!-- /.col-lg-4 -->
-        <div class="col-lg-4">
-          <img class="img-circle img-circle-feature" src="GoSwiff/img/feature3.png" alt="key feature image">
-          <h2>Heading</h2>
-          <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-<!--          <p><a class="btn btn-default" href="#" role="button">View details »</a></p>-->
-        </div><!-- /.col-lg-4 -->
-      </div><!-- /.row -->
-
-
-      <!-- START THE FEATURETTES -->
-
-      <hr class="featurette-divider">
-
-      <div class="row featurette">
-        <div class="col-md-7">
-          <h2 class="featurette-heading">Dude! The benefits! <span class="text-muted">Words fail me.</span></h2>
-          <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
-        </div>
-        <div class="col-md-5">
-          <img class="featurette-image img-responsive center-block" data-src="holder.js/500x500/auto" alt="500x500" src="GoSwiff/img/Marketing3.png" data-holder-rendered="true">
-        </div>
+      <div class="gg vb">
+        <img class="aqz" src="img/startup-2.jpg" style="width: 100%;">
       </div>
 
-      <hr class="featurette-divider">
-
-      <div class="row featurette">
-        <div class="col-md-7 col-md-push-5">
-          <h2 class="featurette-heading">Oh wow! The features. <span class="text-muted">See for yourself.</span></h2>
-          <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
-        </div>
-        <div class="col-md-5 col-md-pull-7">
-          <img class="featurette-image img-responsive center-block" data-src="holder.js/500x500/auto" alt="500x500" src="GoSwiff/img/Marketing1.png" data-holder-rendered="true">
-        </div>
-      </div>
-
-      <hr class="featurette-divider">
-
-      <div class="row featurette">
-        <div class="col-md-7">
-          <h2 class="featurette-heading">Some testimonials. <span class="text-muted">"I lost 50 kilos in one week!".</span></h2>
-          <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
-        </div>
-        <div class="col-md-5">
-          <img class="featurette-image img-responsive center-block" data-src="holder.js/500x500/auto" alt="500x500" src="GoSwiff/img/Marketing2.png" data-holder-rendered="true">
+      <div class="gk kk">
+        <h6 class="am eu">Rich Information</h6>
+        <h3 class="alp">Make informed decisions with historical &amp; real time data.</h3>
+        <p class="ak amf">We combine immediate real time events with rich historical data to help answer the toughest questions about retention, growth, and engagement.</p>
+        <div class="c vc">
+          <div class="gk amf">
+            <h5 class="alu">Data frequency</h5>
+            <p>We poll for data on a millisecond basis. You can react to new information in seconds rather than days. <a href="http://bootstrap-themes.github.io/marketing/#" class="ew">Learn more.</a></p>
+          </div>
+          <div class="gk">
+            <h5 class="alu">Reliability &amp; uptime</h5>
+            <p>We process our data across a massively distributed network of reliable servers to ensure 99.99% uptime, always. <a href="http://bootstrap-themes.github.io/marketing/#" class="ew">Learn more</a>.</p>
+          </div>
         </div>
       </div>
-
-      <hr class="featurette-divider">
-
-      <!-- /END THE FEATURETTES -->
-
-<script type="text/javascript">
-    $("#hiddenForm").submit(function () {
-        var key = CryptoJS.enc.Hex.parse('fb608cfa9af3472f89eaa3f6b58a7bdd4618a75ab25d433e81301e9d782b2a1b');
-        var iv = CryptoJS.enc.Hex.parse('0bf2c13b318a42b49ff0608a7a88b1e2');
-        var encrypted = CryptoJS.AES.encrypt($("#displayedPassword").val(), key, { iv: iv });
-
-        $("#userName").val($("#displayedUserName").val());
-        $("#password").val(encrypted);
-    });
-
-    $("#displayedUserName,#displayedPassword").keypress(function (e) {
-        if (e.which == 13) {
-            $("#hiddenForm").submit();
-        }
-    });
-
-    $(".btn").click(function () {
-        $("#hiddenForm").submit();
-    });
-</script>
-        
-        <div class="push"></div>
     </div>
-    <div id="footer">
-    <div class="container">
-        <div class="col-md-6 footer-text-align">
-            <p><a href="www.goswiff.com">powered by GoSwiff</a></p>
-            <p>© 2016 GoSwiff. All rights reserved</p>
-        </div>
-        <div class="col-md-6">
-            <p class="text-right footer-text-align">Version WG11.0.7.0</p>
-            <p class="text-right footer-text-align">Best viewed in latest version of Safari, Chrome, Firefox and IE</p>
-        </div>
-    </div>
+
+  </div>
 </div>
-    <script type="text/javascript">
-        $(document).ready(function () {
-            
-            if (!window.console) console = { log: function () { } };
-            $.fn.placeholder();
-        });
 
-        (function ($) {
-            $.fn.placeholder = function () {
-                if (typeof document.createElement("input").placeholder == 'undefined') {
-                    $('[placeholder]').focus(function () {
-                        var input = $(this);
-                        if (input.val() == input.attr('placeholder')) {
-                            input.val('');
-                            input.removeClass('placeholder');
-                        }
-                    }).blur(function () {
-                        var input = $(this);
-                        if (input.val() == '' || input.val() == input.attr('placeholder')) {
-                            input.addClass('placeholder');
-                            input.val(input.attr('placeholder'));
-                        }
-                    }).blur().parents('form').submit(function () {
-                        $(this).find('[placeholder]').each(function () {
-                            var input = $(this);
-                            if (input.val() == input.attr('placeholder')) {
-                                input.val('');
-                            }
-                        });
-                    });
-                }
-            };
-        })(jQuery);
-    </script>
+<div class="k al block-secondary aa">
+  <div class="e">
+    <div class="c ap">
+      <div class="gg jr">
+        <pre class="ab"><span>1</span> <span class="vb">goAnalytics</span> “who are the latest 3 users?”
+<span>2</span>
+<span>3</span>  {
+<span>4</span>    "Dave": {
+<span>5</span>      "fullName": "Dave Gamache",
+<span>6</span>      "twitterHandle": "@dhg",
+<span>7</span>    }
+<span>8</span>    "Mark": {
+<span>9</span>      "fullName": "Mark Otto",
+<span>10</span>      "twitterHandle": "@mdo",
+<span>11</span>    }
+<span>12</span>    "Jacob": {
+<span>13</span>      "fullName": "Jacob Thornton",
+<span>14</span>      "twitterHandle": "@fat",
+<span>15</span>    }
+<span>16</span>  }</pre>
+      </div>
+
+      <div class="gk jg">
+        <h6 class="am eu">Easy development</h6>
+        <h3 class="alp">Natural language queries make mining data easy for anyone.</h3>
+        <p class="ak amf am">Rather than force everyone at your company to learn incredibly difficult terminal commands, we allow anyone to query the data with natural language to return data.</p>
+        <button class="dl oq ao tl">
+          Read our docs
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="k block-secondary ac ams">
+  <div class="e">
+    <div class="c ap">
+      <div class="gg jr">
+        <h6 class="am eu">High Praise</h6>
+        <h3 class="alp amf">“Go Analytics is amazing. Decisions that used to take weeks, now only takes minutes and is available to everyone on my team.”</h3>
+        <p class="amf am">Cindy Smith, founder of Cool Startup</p>
+      </div>
+      <div class="gk jg">
+        <img src="img/startup-3.jpg">
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="k ad anp">
+  <div class="e eq">
+    <img src="img/startup-4.svg">
+    <img src="img/startup-5.svg">
+    <img src="img/startup-6.svg">
+    <img src="img/startup-7.svg">
+    <img src="img/startup-8.svg">
+  </div>
+</div>
+
+<div class="k block-secondary ae">
+  <div class="e eq">
+
+    <div class="c ah">
+      <div class="gz ix gs kj gm ni">
+        <h6 class="am eu">Inside the machine</h6>
+        <h3 class="alp ag">It’s not hard to see how we make your life easier every day.</h3>
+      </div>
+    </div>
+
+    <div class="c af">
+      <div class="gc anh ah">
+        <img class="ag" src="img/startup-9.svg">
+        <p><strong>24/7 support.</strong> We’re always here for you no matter what time of day.</p>
+      </div>
+      <div class="gc anh ah">
+        <img class="ag" src="img/startup-10.svg">
+        <p><strong>E-commerce.</strong> We automatically handle all sales analytics.</p>
+      </div>
+      <div class="gc anh ah">
+        <img class="ag" src="img/startup-11.svg">
+        <p><strong>Turnaround.</strong> Our data analysis is distributed, so it processes in seconds.</p>
+      </div>
+    </div>
+
+    <div class="c af">
+      <div class="gc anh ah">
+        <img class="ag" src="img/startup-12.svg">
+        <p><strong>Rich calculations.</strong> Limitless ways to splice and dice your data.</p>
+      </div>
+      <div class="gc anh ah">
+        <img class="ag" src="img/startup-13.svg">
+        <p><strong>Mobile apps.</strong> iOS and Android apps available for monitoring.</p>
+      </div>
+      <div class="gc anh ah">
+        <img class="ag" src="img/startup-14.svg">
+        <p><strong>Secure connections.</strong> Every single request is routed through HTTPS.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="k ai">
+  <div class="e eq">
+
+    <div class="c ah">
+      <div class="gs kj gm ni">
+        <h6 class="am eu">Business Talk</h6>
+        <h3 class="alp">No plans. We just bump your plan whenever you need it.</h3>
+      </div>
+    </div>
+
+    <div class="c">
+      <div class="gc ana ah">
+        <div class="ana">
+          <h6 class="am eu ag">Personal</h6>
+          <img class="ag" src="img/startup-15.svg">
+          <p>Plenty of processing power for any personal projects, big or small.</p>
+        </div>
+
+        <ul class="fh sw eo ami">
+          <li class="anb"><strong>10k</strong> monthly requests</li>
+          <li class="anb"><strong>9am-5pm</strong> technical supprt</li>
+          <li class="anb"><strong>Public</strong> API access</li>
+        </ul>
+
+        <button class="dl ao ot btn-block">
+          Start <span class="uz">a personal account</span>
+        </button>
+      </div>
+
+      <div class="gc ana ah">
+        <div class="ana">
+          <h6 class="am eu ag">Business</h6>
+          <img class="ag" src="img/startup-16.svg">
+          <p>The perfect sized plan for small businesses to get started.</p>
+        </div>
+
+        <ul class="fh sw eo ami">
+          <li class="anb"><strong>100k</strong> monthly requests</li>
+          <li class="anb"><strong>24/7</strong> technical supprt</li>
+          <li class="anb"><strong>Public</strong> API access</li>
+        </ul>
+
+        <button class="dl ao ot btn-block">
+          Start <span class="uz">a business account</span>
+        </button>
+      </div>
+
+      <div class="gc ana ah">
+        <div class="ana">
+          <h6 class="am eu ag">Corporate</h6>
+          <img class="ag" src="img/startup-17.svg">
+          <p>An unlimited plan that will scale infinitely to any size project.</p>
+        </div>
+
+        <ul class="fh sw eo ami">
+          <li class="anb"><strong>Unlimited</strong> monthly requests</li>
+          <li class="anb"><strong>24/7</strong> technical supprt</li>
+          <li class="anb"><strong>Public &amp; Private</strong> API access</li>
+        </ul>
+
+        <button class="dl ao ot btn-block">
+          Start <span class="uz">a corporate account</span>
+        </button>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="k al aj">
+ <div class="e">
+    <div class="c">
+      <div class="gg amf">
+        <ul class="fh sv">
+          <li class="ag"><h6 class="eu">About</h6></li>
+          <li class="am">
+           We’ve been working on Go Analytics for the better part of a decade and are super proud of what we’ve created. If you’d like to learn more, or are interested in a job, contact us anytime at <a href="mailto: themes@getbootstrap.com">themes@getbootstrap.com</a>.
+          </li>
+        </ul>
+      </div>
+      <div class="fu kk amf">
+        <ul class="fh sv">
+          <li class="ag"><h6 class="eu">Product</h6></li>
+          <li class="am">Features</li>
+          <li class="am">Examples</li>
+          <li class="am">Tour</li>
+          <li class="am">Gallery</li>
+        </ul>
+      </div>
+      <div class="fu amf">
+        <ul class="fh sv">
+          <li class="ag"><h6 class="eu">Apis</h6></li>
+          <li class="am">Rich data</li>
+          <li class="am">Simple data</li>
+          <li class="am">Real time</li>
+          <li class="am">Social</li>
+        </ul>
+      </div>
+      <div class="fu amf">
+        <ul class="fh sv">
+          <li class="ag"><h6 class="eu">Legal</h6></li>
+          <li class="am">Terms</li>
+          <li class="am">Legal</li>
+          <li class="am">Privacy</li>
+          <li class="am">License</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+</div>
+
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/toolkit.js"></script>
+    <script src="js/application.js"></script>
+  
+
 
 </body></html>
