@@ -6,6 +6,14 @@ a {
     transition: color 0.2s ease-in-out, border-color 0.4s ease-in-out;
 }
 
+h1, h2, h3, h4, h5, h6, .eg, .eh, .ei, .ej, .ek, .el {
+    font-weight: 600;
+}
+
+.ak {
+    line-height: 1.2;
+}
+
 /* navbar */
 .app-navbar {
   font-weight: 500;
