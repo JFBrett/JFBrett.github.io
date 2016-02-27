@@ -1,1 +1,276 @@
-Hello Bork
+<!DOCTYPE html>
+<html>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Merchant Portal - Login</title>
+<link href="GoSwiff/img/favicon.ico" rel="shortcut icon" type="image/x-icon">
+
+<link href="common/css/css.css" rel="stylesheet">
+<link href="common/css/carousel.css" rel="stylesheet">    
+<link href="GoSwiff/css/GoSwiff_merchant.css" rel="stylesheet">
+
+<script src="js/jquery-1.10.2.js"></script>
+<script src="js/jquery-1.9.1.js"></script>
+<script src="js/jquery-ui.js"></script>
+<script src="js/modernizr-2.5.3.js"></script>
+<script src="js/jquery.livequery.js"></script>
+<script src="js/bootstrap.js"></script>
+<script src="js/bootstrapSwitch.js"></script>
+<script src="js/swiff_reseller_js.js"></script>
+<script src="js/plugins/metisMenu/metisMenu.min.js"></script>
+<script src="js/bootstrap-tabdrop.js"></script>
+<script src="js/plugins/morris/raphael.min.js"></script>
+<script src="js/plugins/morris/morris.min.js"></script>
+<script src="js/sb-admin-2.js"></script>
+    <!--[if lt IE 9]>
+        <script type="text/javascript" src="/goSwiff/11.0.4.0/Admin/Scripts/respond.min.js"> </script>
+        <script type="text/javascript" src="/goSwiff/11.0.4.0/Admin/Scripts/selectivizr-min.js"> </script>
+        <![endif]-->
+    </head>
+<body>
+    <div id="wrap">
+    <div class="navbar-wrapper">
+      <div class="container">
+        <nav class="navbar navbar-static-top">
+            <div class="headerLogo">
+                <h1 class="logo"><a href="#">
+                    <img src="GoSwiff/img/logo_signin.png"></a></h1>
+            </div>
+            <ul class="nav navbar-nav portal-home">
+            <li class="portal-name">
+                <h3></h3>
+            </li>
+            <a class="btn btn-success btn-lg btn-register" href="Merchant%20Portal%20-%20Sign%20up.html">Register</a>
+            <li class="btn-apple"></li>
+            <li class="btn-google"></li>
+            </ul>
+          </nav>
+        </div>
+    <!--Login box-->
+<div class="container container-login col-md-offset-2">
+    <div class="row">
+        <div class="col-md-6">
+            <div class="panel panel-default login-panel">
+                <div class="panel-heading">
+                    <h3 class="panel-title">Please sign in</h3>
+                </div>
+                <div class="panel-body">
+                    <div class="form-signin">
+                        <div class="form-group">
+                            <input autofocus="autofocus" class="form-control" id="displayedUserName" maxlength="50" name="displayedUserName" placeholder="Username" type="text" value="">    
+                        </div>
+                        <div class="input-group form-group padding-bottom-sm">
+                            <input class="form-control" id="displayedPassword" maxlength="50" name="displayedPassword" placeholder="Password" type="password" value=""><span class="input-group-btn">
+        <a class="btn btn-default" type="button" ref="https://mpos2.corp.sccpgroup.com/goSwiff/11.0.6.0_Upgrade/Merchant/Login/ResetPasswordRequest">Forgot?</a>
+      </span>
+                        </div>
+                        <input class="btn btn-lg btn-primary btn-block" type="button" value="Sign in">
+                        <div class="login-footer">
+                            <label>
+                                Not registered with GoSwiff? <a class="forget" href="Merchant%20Portal%20-%20Sign%20up.html">Sign up here</a>
+                            </label>
+                        </div>
+                    </div>
+
+<form action="https://mpos2.corp.sccpgroup.com/goSwiff/11.0.6.0_Upgrade/Merchant/Login/Login" autocomplete="off" id="hiddenForm" method="post">                        <input type="hidden" id="userName" name="username">
+                        <input type="hidden" id="password" name="password">
+<input name="__RequestVerificationToken" type="hidden" value="_-QD5jLTpY_G56w9iUPWY8s21zxophRqRBWpFDtFDt6V0Zj0e9XqttMconvcW5WoGw4MaE1NtYp9OF2jFho5GR6PSfeza8STdWUuMzm7UXY1"></form>                </div>
+            </div>
+        </div>
+    </div>
+</div>
+    </div>
+
+ <!-- Carousel
+    ================================================== -->
+   <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+  </ol>
+
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner" role="listbox">
+    <div class="item active">
+      <img src="GoSwiff/img/bg.jpg" alt="...">
+      <div class="carousel-caption col-md-offset-4">
+        This is the first caption.
+          <p class="carousel-blurb">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae felis euismod, feugiat magna vitae, pretium ex.</p>
+          <a class="btn btn-primary btn-lg" href="Merchant%20Portal%20-%20Sign%20up.html">Get started</a>
+      </div>
+    </div>
+    <div class="item">
+      <img src="GoSwiff/img/bg2.jpg" alt="...">
+      <div class="carousel-caption col-md-offset-4">
+        This is the second caption.
+          <p class="carousel-blurb">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae felis euismod, feugiat magna vitae, pretium ex. Maecenas ac libero non dui congue ultricies eget non lacus. </p>
+          <p class ="carousel-tagline">And even more text</p>
+      </div>
+    </div>
+    <div class="item">
+      <img src="GoSwiff/img/bg3.jpg" alt="...">
+      <div class="carousel-caption col-md-offset-4">
+        And this is the third. 
+          <p class="carousel-blurb">Sed vitae felis euismod, feugiat magna vitae, pretium ex. </p>
+          <p class ="carousel-tagline">Only 2.1% transaction fee.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Controls -->
+  <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+<!-- /.carousel -->
+
+
+    <!-- Marketing messaging and featurettes
+    ================================================== -->
+    <!-- Wrap the rest of the page in another container to center all the content. -->
+
+    <div class="container marketing">
+
+      <!-- Three columns of text below the carousel -->
+      <div class="row">
+        <div class="col-lg-4">
+          <img class="img-circle img-circle-feature" src="GoSwiff/img/feature1.png" alt="key feature image">
+          <h2>Heading</h2>
+          <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
+<!--          <p><a class="btn btn-default" href="#" role="button">View details »</a></p>-->
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-4">
+          <img class="img-circle img-circle-feature" src="GoSwiff/img/feature2.png" alt="key feature image">
+          <h2>Heading</h2>
+          <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
+<!--          <p><a class="btn btn-default" href="#" role="button">View details »</a></p>-->
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-4">
+          <img class="img-circle img-circle-feature" src="GoSwiff/img/feature3.png" alt="key feature image">
+          <h2>Heading</h2>
+          <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+<!--          <p><a class="btn btn-default" href="#" role="button">View details »</a></p>-->
+        </div><!-- /.col-lg-4 -->
+      </div><!-- /.row -->
+
+
+      <!-- START THE FEATURETTES -->
+
+      <hr class="featurette-divider">
+
+      <div class="row featurette">
+        <div class="col-md-7">
+          <h2 class="featurette-heading">Dude! The benefits! <span class="text-muted">Words fail me.</span></h2>
+          <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+        </div>
+        <div class="col-md-5">
+          <img class="featurette-image img-responsive center-block" data-src="holder.js/500x500/auto" alt="500x500" src="GoSwiff/img/Marketing3.png" data-holder-rendered="true">
+        </div>
+      </div>
+
+      <hr class="featurette-divider">
+
+      <div class="row featurette">
+        <div class="col-md-7 col-md-push-5">
+          <h2 class="featurette-heading">Oh wow! The features. <span class="text-muted">See for yourself.</span></h2>
+          <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+        </div>
+        <div class="col-md-5 col-md-pull-7">
+          <img class="featurette-image img-responsive center-block" data-src="holder.js/500x500/auto" alt="500x500" src="GoSwiff/img/Marketing1.png" data-holder-rendered="true">
+        </div>
+      </div>
+
+      <hr class="featurette-divider">
+
+      <div class="row featurette">
+        <div class="col-md-7">
+          <h2 class="featurette-heading">Some testimonials. <span class="text-muted">"I lost 50 kilos in one week!".</span></h2>
+          <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+        </div>
+        <div class="col-md-5">
+          <img class="featurette-image img-responsive center-block" data-src="holder.js/500x500/auto" alt="500x500" src="GoSwiff/img/Marketing2.png" data-holder-rendered="true">
+        </div>
+      </div>
+
+      <hr class="featurette-divider">
+
+      <!-- /END THE FEATURETTES -->
+
+<script type="text/javascript">
+    $("#hiddenForm").submit(function () {
+        var key = CryptoJS.enc.Hex.parse('fb608cfa9af3472f89eaa3f6b58a7bdd4618a75ab25d433e81301e9d782b2a1b');
+        var iv = CryptoJS.enc.Hex.parse('0bf2c13b318a42b49ff0608a7a88b1e2');
+        var encrypted = CryptoJS.AES.encrypt($("#displayedPassword").val(), key, { iv: iv });
+
+        $("#userName").val($("#displayedUserName").val());
+        $("#password").val(encrypted);
+    });
+
+    $("#displayedUserName,#displayedPassword").keypress(function (e) {
+        if (e.which == 13) {
+            $("#hiddenForm").submit();
+        }
+    });
+
+    $(".btn").click(function () {
+        $("#hiddenForm").submit();
+    });
+</script>
+        
+        <div class="push"></div>
+    </div>
+    <div id="footer">
+    <div class="container">
+        <div class="col-md-6 footer-text-align">
+            <p><a href="www.goswiff.com">powered by GoSwiff</a></p>
+            <p>© 2016 GoSwiff. All rights reserved</p>
+        </div>
+        <div class="col-md-6">
+            <p class="text-right footer-text-align">Version WG11.0.7.0</p>
+            <p class="text-right footer-text-align">Best viewed in latest version of Safari, Chrome, Firefox and IE</p>
+        </div>
+    </div>
+</div>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            
+            if (!window.console) console = { log: function () { } };
+            $.fn.placeholder();
+        });
+
+        (function ($) {
+            $.fn.placeholder = function () {
+                if (typeof document.createElement("input").placeholder == 'undefined') {
+                    $('[placeholder]').focus(function () {
+                        var input = $(this);
+                        if (input.val() == input.attr('placeholder')) {
+                            input.val('');
+                            input.removeClass('placeholder');
+                        }
+                    }).blur(function () {
+                        var input = $(this);
+                        if (input.val() == '' || input.val() == input.attr('placeholder')) {
+                            input.addClass('placeholder');
+                            input.val(input.attr('placeholder'));
+                        }
+                    }).blur().parents('form').submit(function () {
+                        $(this).find('[placeholder]').each(function () {
+                            var input = $(this);
+                            if (input.val() == input.attr('placeholder')) {
+                                input.val('');
+                            }
+                        });
+                    });
+                }
+            };
+        })(jQuery);
+    </script>
+
+</body></html>

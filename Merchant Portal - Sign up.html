@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html class=" js no-flexbox flexbox-legacy canvas canvastext webgl no-touch geolocation postmessage websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgclippaths js no-flexbox flexbox-legacy canvas canvastext webgl no-touch geolocation postmessage websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgclippaths"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Merchant Portal - Login</title>
+<link href="GoSwiff/img/favicon.ico" rel="shortcut icon" type="image/x-icon">
+
+<link href="common/css/css.css" rel="stylesheet">
+<link href="GoSwiff/css/GoSwiff_merchant.css" rel="stylesheet">
+
+<script src="js/jquery-1.10.2.js"></script>
+<script src="js/jquery-1.9.1.js"></script>
+<script src="js/jquery-ui.js"></script>
+<script src="js/modernizr-2.5.3.js"></script>
+<script src="js/jquery.livequery.js"></script>
+<script src="js/bootstrap.js"></script>
+<script src="js/bootstrapSwitch.js"></script>
+<script src="js/swiff_reseller_js.js"></script>
+<script src="js/plugins/metisMenu/metisMenu.min.js"></script>
+<script src="js/bootstrap-tabdrop.js"></script>
+<script src="js/plugins/morris/raphael.min.js"></script>
+<script src="js/plugins/morris/morris.min.js"></script>
+<script src="js/sb-admin-2.js"></script>
+    <!--[if lt IE 9]>
+        <script type="text/javascript" src="/goSwiff/11.0.4.0/Admin/Scripts/respond.min.js"> </script>
+        <script type="text/javascript" src="/goSwiff/11.0.4.0/Admin/Scripts/selectivizr-min.js"> </script>
+        <![endif]-->
+    </head>
+<body class="bg-img">
+    <div id="wrap">
+    <div class="navbar navbar-default navbar-fixed-top nav-register">
+      <div class="container">
+        
+            <div class="logo-register">
+                <h1 class="logo"><a href="#">
+                    <img src="GoSwiff/img/logo_signin.png"></a></h1>
+            </div>
+        </div>
+    </div>
+<!--Login box-->
+<div class="container container-login container-register">
+    <div class="row">
+        <div>
+            <div class="panel panel-default login-panel">
+                <div class="panel-heading">
+                    <h3 class="panel-title">Register with us</h3>
+                </div>
+                <div class="panel-body">
+                    <div>
+                        <div class="form-group"><label for="email1">Enter your email</label>
+                            <input autofocus="autofocus" class="form-control" maxlength="50" id="email1" placeholder="name@example.com" type="email" value="">    
+                        </div>
+                        <div class="form-group"><label for="email2">Confirm your email</label>
+                            <input autofocus="autofocus" class="form-control" maxlength="50" id="email2" placeholder="name@example.com" type="email" value="">    
+                        </div>
+                        <label for="displayedPassword">Create a password</label>
+                        <div class="input-group form-group padding-bottom-sm">
+                            <input class="form-control" id="displayedPassword" maxlength="50" name="displayedPassword" placeholder="Password (at least 8 characters)" type="password" value=""><span class="input-group-btn">
+        <a class="btn btn-default" type="button" ref="https://mpos2.corp.sccpgroup.com/goSwiff/11.0.6.0_Upgrade/Merchant/Login/ResetPasswordRequest">Show?</a>
+      </span>
+                        </div>
+                        <a class="btn btn-lg btn-primary btn-block" type="button" value="Continue" href="Merchant%20Portal%20-%20Sign%20up%20-%20Step%202.html">Continue</a>
+                        <div class="login-footer">
+                            <label>
+                                Already registered? <a class="forget" href="Merchant%20Portal%20-%20Login.html">Log in here</a>
+                            </label>
+                        </div>
+                    </div>
+
+<form action="https://mpos2.corp.sccpgroup.com/goSwiff/11.0.6.0_Upgrade/Merchant/Login/Login" autocomplete="off" id="hiddenForm" method="post">                        <input type="hidden" id="userName" name="username">
+                        <input type="hidden" id="password" name="password">
+<input name="__RequestVerificationToken" type="hidden" value="_-QD5jLTpY_G56w9iUPWY8s21zxophRqRBWpFDtFDt6V0Zj0e9XqttMconvcW5WoGw4MaE1NtYp9OF2jFho5GR6PSfeza8STdWUuMzm7UXY1"></form>                </div>
+            </div>
+        </div>
+    </div>
+</div><script type="text/javascript">
+    $("#hiddenForm").submit(function () {
+        var key = CryptoJS.enc.Hex.parse('fb608cfa9af3472f89eaa3f6b58a7bdd4618a75ab25d433e81301e9d782b2a1b');
+        var iv = CryptoJS.enc.Hex.parse('0bf2c13b318a42b49ff0608a7a88b1e2');
+        var encrypted = CryptoJS.AES.encrypt($("#displayedPassword").val(), key, { iv: iv });
+
+        $("#userName").val($("#displayedUserName").val());
+        $("#password").val(encrypted);
+    });
+
+    $("#displayedUserName,#displayedPassword").keypress(function (e) {
+        if (e.which == 13) {
+            $("#hiddenForm").submit();
+        }
+    });
+
+    $(".btn").click(function () {
+        $("#hiddenForm").submit();
+    });
+</script>
+        
+        <div class="push"></div>
+    </div>
+    <div id="footer">
+    <div class="container">
+        <div class="col-md-6 footer-text-align">
+            <p><a href="www.goswiff.com">powered by GoSwiff</a></p>
+            <p>© 2016 GoSwiff. All rights reserved</p>
+        </div>
+        <div class="col-md-6">
+            <p class="text-right footer-text-align">Version WG11.0.7.0</p>
+            <p class="text-right footer-text-align">Best viewed in latest version of Safari, Chrome, Firefox and IE</p>
+        </div>
+    </div>
+</div>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            
+            if (!window.console) console = { log: function () { } };
+            $.fn.placeholder();
+        });
+
+        (function ($) {
+            $.fn.placeholder = function () {
+                if (typeof document.createElement("input").placeholder == 'undefined') {
+                    $('[placeholder]').focus(function () {
+                        var input = $(this);
+                        if (input.val() == input.attr('placeholder')) {
+                            input.val('');
+                            input.removeClass('placeholder');
+                        }
+                    }).blur(function () {
+                        var input = $(this);
+                        if (input.val() == '' || input.val() == input.attr('placeholder')) {
+                            input.addClass('placeholder');
+                            input.val(input.attr('placeholder'));
+                        }
+                    }).blur().parents('form').submit(function () {
+                        $(this).find('[placeholder]').each(function () {
+                            var input = $(this);
+                            if (input.val() == input.attr('placeholder')) {
+                                input.val('');
+                            }
+                        });
+                    });
+                }
+            };
+        })(jQuery);
+    </script>
+
+</body></html>
