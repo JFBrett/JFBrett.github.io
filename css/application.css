@@ -19,7 +19,7 @@ h1, h2, h3, h4, h5, h6, .eg, .eh, .ei, .ej, .ek, .el {
 }
 
 h1 {
-    text-shadow: rgba(0,0,0,0.4) 1px 4px 8px;
+/*    text-shadow: rgba(0,0,0,0.4) 1px 4px 8px;*/
 }
 
 .ak {
@@ -34,6 +34,15 @@ td, th {
     td, th {
         min-width: 180px;
     }
+}
+
+.sv .material-icons {
+    font-size: 14px;
+    color: #fff;
+}
+
+.sv li {
+     margin-bottom: 0px; 
 }
 
 td .material-icons {
@@ -67,7 +76,8 @@ td .material-icons {
 
 .apr .navbar-nav > li > a {
     color: #FFF;
-    text-shadow: rgba(0, 0, 0, 0.4) 1px 0px 8px;
+/*    text-shadow: rgba(0, 0, 0, 0.4) 1px 0px 8px;*/
+    font-weight:900;
 }
 
 .apr .navbar-nav > li > a:hover, .apr .navbar-nav > li > a:focus {
