@@ -492,7 +492,7 @@ mark,
   text-align: right;
 }
 .eq {
-  text-align: center;
+  text-align: left;
 }
 .er {
   text-align: justify;
@@ -769,7 +769,13 @@ pre code {
 @media (min-width: 992px) {
   .e {
     width: 880px;
+  }    
+/*
+@media (min-width: 992px) {
+  .eq {
+    text-align: center;
   }
+*/
 }
 @media (min-width: 1200px) {
   .e {
