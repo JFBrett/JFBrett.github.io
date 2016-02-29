@@ -36,6 +36,7 @@ td, th {
     }
 }
 
+/*
 .anh {
     padding-right: 30px !important;
     padding-left: 0px !important;
@@ -44,6 +45,13 @@ td, th {
 @media (min-width: 768px){
     .anh {
         padding-left: 30px !important; 
+    }
+}
+*/
+
+@media (min-width: 992px){
+    .e {
+        width: 926px;
     }
 }
 
