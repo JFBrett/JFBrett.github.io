@@ -36,6 +36,17 @@ td, th {
     }
 }
 
+.anh {
+    padding-right: 30px !important;
+    padding-left: 0px !important;
+}
+
+@media (min-width: 768px){
+    .anh {
+        padding-left: 30px !important; 
+    }
+}
+
 .sv .material-icons {
     font-size: 14px;
     color: #fff;
@@ -95,17 +106,17 @@ td .material-icons {
 }
 
 .anr.nav-stacked > li.active > a, .anr.nav-stacked > li.active > a:hover, .anr.nav-stacked > li.active > a:focus {
-    border-left-color: #F57E2F;
+    border-left-color: #2876C7;
 }
 
 .anr > li.active > a, .anr > li.active > a:hover, .anr > li.active > a:focus {
     font-weight: 700;
-    color: #F57E2F;
-    border-bottom-color: #F57E2F;
+    color: #2876C7;
+    border-bottom-color: #2876C7;
 }
 
 .anr > li > a:hover, .anr > li > a:focus {
-    color: #F57E2F;
+    color: #2876C7;
     background-color: transparent;
 }
 
