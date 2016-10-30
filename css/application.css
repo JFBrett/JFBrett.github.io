@@ -111,7 +111,7 @@ td .material-icons {
 
 /*mobile menu*/
 .aqt {
-/*    background-color: #0E6E73;*/
+    background-color: #0b0d0e;
 }
 
 .anr.nav-stacked > li.active > a, .anr.nav-stacked > li.active > a:hover, .anr.nav-stacked > li.active > a:focus {
@@ -130,7 +130,7 @@ td .material-icons {
 }
 
 .anr > li > a {
-    color: rgba(0, 0, 0, 0.8);
+    color: #fff;
 }
 
 
@@ -159,6 +159,11 @@ td .material-icons {
 }
 
 .thumb:hover {
+    border: 3px #fffc00 solid;
+    filter: none;
+}
+
+.thumb:active, .thumb:focus, .thumb:link {
     border: 3px #fffc00 solid;
     filter: none;
 }
