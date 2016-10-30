@@ -1,6 +1,7 @@
 /*global*/
 body {
     letter-spacing: -0.04em;
+    color: #191c1f;
 }
 
 a {
@@ -57,7 +58,7 @@ td, th {
 
 .sv .material-icons {
     font-size: 14px;
-    color: #fff;
+    color: #fffc00;
 }
 
 .sv li {
@@ -112,6 +113,10 @@ td .material-icons {
 /*mobile menu*/
 .aqt {
     background-color: #0b0d0e;
+}
+
+.anr.nav-stacked > li > a {
+    padding: 12px 10px 12px 30px;
 }
 
 .anr.nav-stacked > li.active > a, .anr.nav-stacked > li.active > a:hover, .anr.nav-stacked > li.active > a:focus {
