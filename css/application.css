@@ -610,6 +610,7 @@ h1.apd {
   height: 100%;
   box-shadow: 0px 200px 400px rgb(18, 20, 23) inset;
   padding-bottom:0px;
+  /*background-color: #8a8f96;*/
 }
 
 .process-block {
