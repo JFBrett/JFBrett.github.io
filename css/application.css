@@ -11,6 +11,13 @@ a {
     transition: color 0.2s ease-in-out, border-color 0.4s ease-in-out;
 }
 
+h3, .eg, .eh, .ei, .ej, .ek, .el {
+    line-height: 1.2; 
+    margin-top: 14px;
+    color: #2d3238;
+    letter-spacing: 0.2px;
+}
+
 h1, h2, h3, h4, h5, h6, .eg, .eh, .ei, .ej, .ek, .el {
     font-weight: 600;
 }
@@ -586,17 +593,13 @@ xtype
   }
 }
 
-h3, .eg, .eh, .ei, .ej, .ek, .el {
-    line-height: 1.4;
-    margin-top: 14px;
-}
-
 b, strong {
   font-weight: 600;
 }
 
 h1.apd {
     color: rgba(255, 255, 255, 0.4);
+    font-weight: bold;
 }
 
 .footer-title {
@@ -608,9 +611,8 @@ h1.apd {
   left: 0;
   width: 100%;
   height: 100%;
-  box-shadow: 0px 200px 400px rgb(18, 20, 23) inset;
+  box-shadow: 0px 280px 400px rgb(25, 28, 31) inset;
   padding-bottom:0px;
-  /*background-color: #8a8f96;*/
 }
 
 .process-block {
