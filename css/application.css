@@ -488,8 +488,8 @@ xtype
 
 -------------------------------- */
 .cd-headline.type .cd-words-wrapper {
-  vertical-align: top;
-  overflow: hidden;
+  /* vertical-align: top; */
+  /* overflow: hidden; */
 }
 
 /* vertical bar */
