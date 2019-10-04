@@ -330,8 +330,9 @@ td .material-icons {
 .ao {
   font-size: 16px;
   border-radius: 2px;
-  font-weight: 900;
+  font-weight: 800;
   letter-spacing: .05em;
+  font-family: 'Nunito Sans';
 }
 .block-secondary .ao {
   width: 100%;
