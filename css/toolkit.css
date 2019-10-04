@@ -8050,8 +8050,8 @@ fieldset[disabled] .anx.active {
   color: inherit;
   background-color: #ffffff;
   background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
+ /* background-size: cover; */
+  background-repeat: repeat;
 }
 .aoq {
   overflow: hidden;
