@@ -110,7 +110,7 @@ td .material-icons {
 .apr .navbar-nav > li > a {
     color: #FFF;
 /*    text-shadow: rgba(0, 0, 0, 0.4) 1px 0px 8px;*/
-    font-weight:900;
+    font-weight:800;
 }
 
 .apr .navbar-nav > li > a:hover, .apr .navbar-nav > li > a:focus {
