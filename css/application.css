@@ -16,6 +16,7 @@ h3, .eg, .eh, .ei, .ej, .ek, .el {
     margin-top: 14px;
     color: #2d3238;
     letter-spacing: 0.2px;
+    font-weight: 800;
 }
 
 h1, h2, h3, h4, h5, h6, .eg, .eh, .ei, .ej, .ek, .el {
@@ -603,8 +604,7 @@ b, strong {
 }
 
 h1.apd {
-    color: rgba(255, 255, 255, 0.4);
-    font-weight: bold;
+    color: #5e6a71;
 }
 
 .footer-title {
