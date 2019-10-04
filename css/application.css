@@ -534,6 +534,7 @@ xtype
 }
 .cd-headline.type b.is-visible {
   visibility: visible;
+  font-weight: 400;
 }
 .cd-headline.type i {
   position: absolute;
