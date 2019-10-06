@@ -505,6 +505,7 @@ mark,
 }
 .eu {
   text-transform: uppercase;
+  color: #bec8ce !important;
 }
 .ev {
   text-transform: capitalize;
